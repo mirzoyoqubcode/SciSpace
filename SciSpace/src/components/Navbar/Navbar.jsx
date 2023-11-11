@@ -43,10 +43,7 @@ const Navbar = () => {
         />
 
         <ul className={styles.mobile_links}>
-          <Link to={"login"}>
-            <li>Log in</li>
-          </Link>
-
+          <li>Log in</li>
           <Link to={"account"}>
             <li className={styles.mobile_signin}>Sign in</li>
           </Link>
