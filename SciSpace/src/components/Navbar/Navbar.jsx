@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { HiOutlineMenu } from "react-icons/hi";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [showNavMenu, setShowNavMenu] = useState(false);
 
@@ -37,7 +38,9 @@ const Navbar = () => {
 
         <ul className={styles.mobile_links}>
           <li>Log in</li>
-          <li className={styles.mobile_signin}>Sign in</li>
+          <Link to={"account"}>
+            <li className={styles.mobile_signin}>Sign in</li>
+          </Link>
         </ul>
       </motion.div>
     </div>
