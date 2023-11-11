@@ -35,8 +35,7 @@ const Navbar = () => {
           className={styles.close_icon}
           onClick={() => setShowNavMenu(!showNavMenu)}
         />
-
-        <ul className={styles.mobile_links}>
+        <ul className={`${styles.mobile_links}`}>
           <li>Log in</li>
           <Link to={"account"}>
             <li className={styles.mobile_signin}>Sign in</li>
