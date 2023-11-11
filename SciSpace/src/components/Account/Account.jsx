@@ -5,7 +5,9 @@ import Chat from "../../assets/Chat_alt.png";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import BigCard from "../BigCard";
+import Circle_Check from "../../assets/Circle_Check.png";
 import { links, scores } from "../../utils/constants";
+import Footer from "../Footer/Footer";
 
 const Account = () => {
   return (
@@ -30,9 +32,15 @@ const Account = () => {
               </p>
             </div>
             <div className="flex lg:flex-col lg:gap-y-4 justify-between items-center lg:ml-36 gap-x-8">
-              <BsLinkedin className="text-[40px]" />
-              <FiMail className="text-[40px]" />
-              <img src={Chat} alt="Chat" className="w-[45px] h-[45px]" />
+              <Link to="/">
+                <BsLinkedin className="text-[40px]" />
+              </Link>
+              <Link to="/">
+                <FiMail className="text-[40px]" />
+              </Link>
+              <Link to="/">
+                <img src={Chat} alt="Chat" className="w-[45px] h-[45px]" />
+              </Link>
             </div>
           </div>
           <ul className="flex w-full justify-between items-center mt-8">
@@ -65,14 +73,12 @@ const Account = () => {
           </div>
           <div className="mt-6 flex flex-col lg:flex-row lg:justify-center gap-y-6 lg:gap-x-6 font-medium">
             <div className="bg-white p-6 w-full text-center">
-              <p className="text-2xl max-md:text-lg mb-2">
-                Skills and Expertise
-              </p>
+              <p className="lg:text-2xl text-xl mb-2">Skills and Expertise</p>
               <div>
-                <button className="rounded-3xl border-2 border-primary bg-transparent text-primary font-medium py-1 px-6 text-xl max-md:text-md">
+                <button className="rounded-3xl border-2 border-primary bg-transparent text-primary font-medium py-1 px-6 lg:text-xl ">
                   #Social_sciences
                 </button>
-                <button className="rounded-3xl border-2 border-primary bg-transparent text-primary font-medium py-1 px-6 ml-4 text-xl max-md:text-md">
+                <button className="rounded-3xl border-2 border-primary bg-transparent text-primary font-medium py-1 px-6 ml-4 lg:text-xl">
                   #Politics
                 </button>
               </div>
@@ -84,7 +90,11 @@ const Account = () => {
             </div>
           </div>
           {/* Contribution */}
-          <BigCard />
+          <BigCard
+            icon1={Circle_Check}
+            text1="Latest post"
+            textLast="See more"
+          />
           {/* End of Contribution */}
           {/* RESEARCH INTERESTS */}
           <div
@@ -118,6 +128,7 @@ const Account = () => {
           {/* END OF RESEARCH INTERESTS */}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

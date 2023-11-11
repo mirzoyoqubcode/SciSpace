@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./Registeration.module.scss";
+import styles from "./Registration.module.scss";
 import register1 from "../../assets/register1.png";
 import register2 from "../../assets/register2.png";
 import register3 from "../../assets/register3.png";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
-const Registeration = () => {
+const Registration = () => {
   return (
     <div>
       <nav>
@@ -62,4 +62,4 @@ const Registeration = () => {
   );
 };
 
-export default Registeration;
+export default Registration;

@@ -34,7 +34,7 @@ const Header = () => {
               the science world
             </h1>
           </motion.div>
-          <Link to={"/registeration"}>
+          <Link to={"/registration"}>
             <motion.button
               variants={buttonVariants}
               whileHover="hover"
