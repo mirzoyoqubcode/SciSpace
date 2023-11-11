@@ -48,3 +48,21 @@ export const scores = [
     text: "shares",
   },
 ];
+
+export const recommendations = [
+  {
+    id: 1,
+    name: "Scopus",
+    field: "Journal",
+  },
+  {
+    id: 2,
+    name: "Dr. Newton",
+    field: "Physics",
+  },
+  {
+    id: 3,
+    name: "Dr. Archimedes",
+    field: "Mathematics",
+  },
+];

@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./Registeration.module.scss";
-const Registeration = () => {
+import styles from "./Registration.module.scss";
+const Registration = () => {
   return (
     <div>
       <nav>
         <h1>SciSpace</h1>
       </nav>
-      <div className={styles.registeration_main}>
+      <div className={styles.registration_main}>
         <h1>What type of researcher are you ?</h1>
         <div>
           <article>
@@ -27,4 +27,4 @@ const Registeration = () => {
   );
 };
 
-export default Registeration;
+export default Registration;
