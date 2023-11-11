@@ -1,0 +1,163 @@
+.wrapper_header {
+  background-color: #e9e9e9;
+  padding: 5rem 0;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1000px) {
+  }
+  .btn_join {
+    border: 1px solid #946cee;
+    font-size: 25px;
+    padding: 0.5rem 4rem;
+    margin: 0 4rem;
+    background-color: #946cee;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s all linear;
+    &:hover {
+      background-color: white;
+      color: #946cee;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 20px;
+      padding: 10px 35px;
+    }
+  }
+  .images {
+    width: 500px;
+    top: 7rem;
+    right: 0;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+  .description_header {
+    margin-left: 5rem;
+    max-width: 700px;
+    .text_header {
+      font-size: 40px;
+      margin: 2rem 4rem;
+      font-weight: 700;
+      @media screen and (max-width: 1000px) {
+        font-size: 30px;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      margin-left: 0;
+    }
+  }
+}
+.progress_wrapper {
+  padding: 3rem 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+    height: 100%;
+  }
+  .gloss_image {
+    width: 500px;
+    top: 7rem;
+    left: 0;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  .progress_desc {
+    margin: 8rem 10rem;
+    max-width: 650px;
+    @media screen and (max-width: 1200px) {
+      margin: auto;
+      width: 90%;
+      padding: 1rem;
+    }
+    .progress_text {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      span {
+        color: #946cee;
+      }
+    }
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+
+    .skills1 {
+      padding: 1rem 0 0 2rem;
+      button {
+        transition: 0.2s all linear;
+        width: 200px;
+        margin: 0 1rem;
+        border-radius: 50px;
+        border: 3px solid #946cee;
+        padding: 1rem 3rem;
+        &:hover {
+          background-color: white;
+          color: #946cee;
+        }
+        @media screen and (max-width: 750px) {
+          margin: 10px;
+        }
+      }
+      @media screen and (max-width: 750px) {
+        padding: 0;
+        text-align: center;
+      }
+    }
+    .skills2 {
+      padding: 1rem 0 0 6rem;
+      button {
+        transition: 0.2s all linear;
+        width: 200px;
+        margin: 0 1rem;
+        border-radius: 50px;
+        border: 3px solid #946cee;
+        padding: 1rem 3rem;
+        &:hover {
+          background-color: white;
+          color: #946cee;
+        }
+        @media screen and (max-width: 750px) {
+          margin: 10px;
+        }
+      }
+      @media screen and (max-width: 750px) {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+.community {
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6rem 0;
+  h1 {
+    font-size: 40px;
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+  .community_btn {
+    border: 2px solid #946cee;
+    background-color: #946cee;
+    color: white;
+    padding: 1rem 6rem;
+    font-size: 25px;
+    margin: 2rem 0;
+    border-radius: 10px;
+    transition: 0.2s all linear;
+    &:hover {
+      background-color: white;
+      color: #946cee;
+    }
+  }
+}

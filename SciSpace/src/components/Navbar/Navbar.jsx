@@ -9,23 +9,29 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [showNavMenu, setShowNavMenu] = useState(false);
 
-  const variants = {
+  const changes = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "10%" },
+    closed: { opacity: 1, x: "100%" },
   };
+
   return (
     <div className={styles.nav}>
       <h1>SciSpace</h1>
       <ul className={styles.links}>
-        <li>Log in</li>
-        <li className={styles.signin}>Sign in</li>
+        <Link to={"login"}>
+          <li>Log in</li>
+        </Link>
+
+        <Link to={"account"}>
+          <li className={styles.signin}>Sign in</li>
+        </Link>
       </ul>
       <div className={styles.mobile_nav_icon}>
         <HiOutlineMenu onClick={() => setShowNavMenu(!showNavMenu)} />
       </div>
       <motion.div
         animate={showNavMenu ? "open" : "closed"}
-        variants={variants}
+        variants={changes}
         className={clsx({
           [styles.navMenu]: true,
           [styles.showMenu]: showNavMenu,
@@ -37,7 +43,10 @@ const Navbar = () => {
         />
 
         <ul className={styles.mobile_links}>
-          <li>Log in</li>
+          <Link to={"login"}>
+            <li>Log in</li>
+          </Link>
+
           <Link to={"account"}>
             <li className={styles.mobile_signin}>Sign in</li>
           </Link>
