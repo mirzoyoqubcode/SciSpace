@@ -21,7 +21,9 @@ const BigCard = ({
             {text2 && <span>{text2}</span>}
           </div>
         </div>
-        <p className="text-[#818181]">{date || "Feb 10, 2023"}</p>
+        <p className="text-[#818181] flex items-center justify-center">
+          {date || "Feb 10, 2023"}
+        </p>
       </div>
       <div className="mt-4">
         <h3 className="font-semibold mb-3 text-lg lg:text-2xl">
@@ -41,11 +43,13 @@ const BigCard = ({
           <button className="rounded-3xl border-2 border-primary bg-transparent text-primary font-medium py-1 px-6 lg:text-xl">
             #Social_sciences
           </button>
-          <button className="rounded-3xl border-2 border-primary bg-transparent text-primary font-medium py-1 px-6 ml-4 lg:text-xl">
+          <button className="rounded-3xl border-2 border-primary bg-transparent text-primary font-medium py-1 px-6 sm:ml-4 mt-4 lg:text-xl">
             #Politics
           </button>
         </div>
-        <p className="text-md lg:text-xl text-[#818181]">{views || 69} views</p>
+        <p className="text-md lg:text-xl text-[#818181] flex items-center justify-center">
+          {views || 69} views
+        </p>
       </div>
       <div className="flex justify-between mt-10 text-md lg:text-xl font-medium">
         <div className="flex gap-6">

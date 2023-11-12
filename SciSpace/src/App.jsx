@@ -8,6 +8,9 @@ import Registration from "./components/Registration/Registration";
 import Home from "./components/Home";
 import AddTool from "./components/AddTool/AddTool";
 import AddDatabase from "./components/AddDatabase/AddDatabase";
+import Questions from "./components/Questions";
+import Tools from "./components/Tools";
+
 function App() {
   return (
     <>
@@ -20,6 +23,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/addtool" element={<AddTool />} />
         <Route path="/adddb" element={<AddDatabase />} />
+        <Route path="/questions" element={<Questions />} />
+        <Route path="/tools" element={<Tools />} />
       </Routes>
     </>
   );
