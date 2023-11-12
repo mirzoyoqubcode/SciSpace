@@ -3,27 +3,6 @@ import { useState } from "react";
 import styles from "./Login.module.scss";
 import Footer from "../Footer/Footer";
 const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const handleLogin = async () => {
-    try {
-      const response = await axios.post("your-api-endpoint/login", {
-        username,
-        password,
-      });
-
-      // Assuming the server responds with a token
-      const token = response.data.token;
-
-      // Store the token (you might want to use a more secure storage)
-      localStorage.setItem("token", token);
-
-      // Redirect or update UI based on authentication state
-    } catch (error) {
-      console.error("Login failed", error);
-      // Handle login failure (e.g., show an error message)
-    }
-  };
   return (
     <div>
       <nav>

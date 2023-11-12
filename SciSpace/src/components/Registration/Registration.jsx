@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Registration.module.scss";
 import register1 from "../../assets/register1.png";
 import register2 from "../../assets/register2.png";
@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 const Registration = () => {
   return (
     <div>
-   
       <nav>
         <h1>SciSpace</h1>
       </nav>

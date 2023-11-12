@@ -1,15 +1,16 @@
 import Footer from "./Footer/Footer";
-import Navbar from "./Navbar/Navbar";
 import ToolCard from "./ToolCard";
 import Zotero from "../assets/Zotero.png";
 import WebScience from "../assets/WebScience.png";
 import Google_Scholar from "../assets/Google_Scholar.png";
 import Spss from "../assets/Spss.png";
+import NavAdmin from "./NavAdmin/NavAdmin";
+import { Link } from "react-router-dom";
 
 const Tools = () => {
   return (
     <>
-      <Navbar />
+      <NavAdmin />
       <section className="min-h-[78vh] w-full bg-secondary py-12">
         <div className="mx-auto w-[90%] max-w-[1200px] max-lg:text-center">
           <h2 className="font-semibold text-lg lg:text-2xl">
@@ -27,11 +28,12 @@ const Tools = () => {
             tags={["Research_sources ", "Organizer"]}
             text=" is a free, open-source citation management tool that helps you organize your research sources, create bibliographies, and collaborate with others."
           />
+
           <button
             type="button"
             className="bg-white py-4 px-14 font-semibold text-xl lg:text-2xl mt-6"
           >
-            Add New Tool
+            <Link to={"/addtool"}>Add New Tool</Link>
           </button>
           <h2 className="font-semibold text-lg lg:text-2xl mt-12">
             Top databases to help your researches
@@ -52,7 +54,7 @@ const Tools = () => {
             type="button"
             className="bg-white py-4 px-14 font-semibold text-xl lg:text-2xl mt-8"
           >
-            Add New Database
+            <Link to={"/adddb"}>Add New Database</Link>
           </button>
         </div>
       </section>

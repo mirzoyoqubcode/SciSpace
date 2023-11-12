@@ -5,15 +5,24 @@ import Avatar_navbar from "../../assets/Avatar_Image.png";
 import { GrAddCircle } from "react-icons/gr";
 import { AiOutlineBell } from "react-icons/ai";
 import { LuSearch } from "react-icons/lu";
+import { Link } from "react-router-dom";
 const NavAdmin = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo_wrapper}>
-        <img src={Logo} alt="" />
+        <Link to={"/home"}>
+          <img src={Logo} alt="" />
+        </Link>
         <ul>
-          <li>Home</li>
-          <li>Questions</li>
-          <li>Tools</li>
+          <Link to={"/home"}>
+            <li>Home</li>
+          </Link>
+          <Link to={"/questions"}>
+            <li>Questions</li>
+          </Link>
+          <Link to={"/tools"}>
+            <li>Tools</li>
+          </Link>
         </ul>
       </div>
       <div className={styles.icons}>
@@ -31,7 +40,9 @@ const NavAdmin = () => {
         </div>
         <GrAddCircle />
         <AiOutlineBell />
-        <img src={Avatar_navbar} alt="" />
+        <Link to={"/account"}>
+          <img src={Avatar_navbar} alt="" />
+        </Link>
       </div>
     </div>
   );

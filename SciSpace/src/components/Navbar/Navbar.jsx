@@ -22,7 +22,7 @@ const Navbar = () => {
           <li>Log in</li>
         </Link>
 
-        <Link to={"/account"}>
+        <Link to={"/registration"}>
           <li className={styles.signin}>Sign in</li>
         </Link>
       </ul>
@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to={"/login"}>
             <li>Log in</li>
           </Link>
-          <Link to={"/account"}>
+          <Link to={"/registration"}>
             <li className={styles.mobile_signin}>Sign in</li>
           </Link>
         </ul>

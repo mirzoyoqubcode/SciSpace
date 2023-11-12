@@ -1,14 +1,14 @@
 import Button from "./Button";
 import Footer from "./Footer/Footer";
-import Navbar from "./Navbar/Navbar";
 import { LuSearch } from "react-icons/lu";
 import SmallCard from "./SmallCard";
 import Old_Avatar from "../assets/old_Avatar.png";
+import NavAdmin from "./NavAdmin/NavAdmin";
 
 const Questions = () => {
   return (
     <>
-      <Navbar />
+      <NavAdmin />
       <section className="min-h-[78vh] w-full bg-secondary py-12">
         <div className="mx-auto w-[90%] max-w-[1200px]">
           <div className="flex gap-x-4 pt-6 max-w-[700px] mx-auto">
