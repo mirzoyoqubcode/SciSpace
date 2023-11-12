@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import styles from "./Login.module.scss";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div>
@@ -12,20 +12,12 @@ const Login = () => {
         <h1>Login</h1>
         <div className={styles.input_wrapper}>
           <p>Email</p>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+          <input type="text" placeholder="Username" />
           <p>Password</p>
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button onClick={handleLogin}>Login</button>
+          <input type="password" placeholder="Password" />
+          <button>
+            <Link to={"/home"}>Login</Link>
+          </button>
         </div>
       </div>
       <Footer />
