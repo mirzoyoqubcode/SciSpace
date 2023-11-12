@@ -1,16 +1,4 @@
-nav {
-  h1 {
-    text-align: center;
-  }
-  padding: 2rem 9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  color: #946cee;
-  font-weight: 600;
-}
-.wrapper_login {
+.wrapper_add_tool {
   background-color: #e9e9e9;
   display: flex;
   align-items: center;
@@ -22,7 +10,7 @@ nav {
     font-weight: 600;
     margin-top: 2rem;
   }
-  .input_wrapper {
+  .input_tool_wrapper {
     padding: 3rem 0;
     width: 700px;
     display: flex;

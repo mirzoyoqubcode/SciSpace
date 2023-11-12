@@ -2,17 +2,17 @@ import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import Avatar from "../../assets/Avatar_Image.png";
 import Chat from "../../assets/Chat_alt.png";
-import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import BigCard from "../BigCard";
 import Circle_Check from "../../assets/Circle_Check.png";
 import { links, scores } from "../../utils/constants";
 import Footer from "../Footer/Footer";
-
-const Account = () => {
+import CountUp from "react-countup";
+import NavAdmin from "../NavAdmin/NavAdmin";
+const Account = ({ n }) => {
   return (
     <>
-      <Navbar />
+      <NavAdmin />
       <section className="bg-[#e9e9e9] min-h-screen py-24">
         <div className="max-w-[1200px] mx-auto min-h-screen max-lg:px-10 max-lg:w-full">
           <div className="flex items-center justify-center px-10 lg:p-0 max-lg:flex-col max-lg:gap-y-8">
@@ -64,7 +64,9 @@ const Account = () => {
                     key={id}
                     className="text-center flex flex-row lg:flex-col font-medium text-2xl max-md:text-lg"
                   >
-                    <span className="text-primary">{number}</span>
+                    <span className="text-primary">
+                      <CountUp end={number} />
+                    </span>
                     <p className="uppercase ml-4 lg:ml-0">{text}</p>
                   </div>
                 );

@@ -18,11 +18,11 @@ const Navbar = () => {
     <div className={styles.nav}>
       <h1>SciSpace</h1>
       <ul className={styles.links}>
-        <Link to={"login"}>
+        <Link to={"/login"}>
           <li>Log in</li>
         </Link>
 
-        <Link to={"account"}>
+        <Link to={"/account"}>
           <li className={styles.signin}>Sign in</li>
         </Link>
       </ul>
@@ -43,8 +43,10 @@ const Navbar = () => {
         />
 
         <ul className={styles.mobile_links}>
-          <li>Log in</li>
-          <Link to={"account"}>
+          <Link to={"/login"}>
+            <li>Log in</li>
+          </Link>
+          <Link to={"/account"}>
             <li className={styles.mobile_signin}>Sign in</li>
           </Link>
         </ul>

@@ -5,9 +5,11 @@ import register2 from "../../assets/register2.png";
 import register3 from "../../assets/register3.png";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+
 const Registration = () => {
   return (
     <div>
+   
       <nav>
         <h1>SciSpace</h1>
       </nav>

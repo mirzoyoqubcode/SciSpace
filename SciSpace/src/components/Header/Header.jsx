@@ -34,7 +34,7 @@ const Header = () => {
               the science world
             </h1>
           </motion.div>
-          <Link to={"/registration"}>
+          <Link to={"/addtool"}>
             <motion.button
               variants={buttonVariants}
               whileHover="hover"
@@ -93,14 +93,16 @@ const Header = () => {
         >
           Evaluate your <span>influence</span> in the science community
         </motion.h1>
-        <motion.button
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
-          className={styles.community_btn}
-        >
-          Join Now
-        </motion.button>
+        <Link to={"/registration"}>
+          <motion.button
+            variants={buttonVariants}
+            whileHover="hover"
+            whileTap="tap"
+            className={styles.community_btn}
+          >
+            Join Now
+          </motion.button>
+        </Link>
       </div>
     </div>
   );
